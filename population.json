@@ -1,0 +1,82 @@
+{
+  "columns": [
+    { "code": "Kon", "text": "kön", "type": "d" },
+    { "code": "Tid", "text": "år", "type": "t" },
+    { "code": "0000001H", "text": "Födda", "type": "c" },
+    {
+      "code": "0000001F",
+      "text": "Döda",
+      "comment": "För åren 1757-1762, 1788-1790 och 1806-1809 har uppgifterna om totalt antal döda reviderats i efterhand. Summan per kön överensstämmer därför inte med totalen.\r\n",
+      "type": "c"
+    },
+    { "code": "000000LX", "text": "Invandringar", "type": "c" },
+    {
+      "code": "0000001G",
+      "text": "Utvandringar",
+      "comment": "Uppgifterna i denna tabell avser den officiellt redovisade utvandringen. De faktiska utvandringssiffrorna på 1800- och inledningen av 1900-talet bedöms vara större. Mer information om detta och Professor G. Sundbärgs revidering av statistiken finns i Emigrationsutredningen 1907–1914.\r\n",
+      "type": "c"
+    }
+  ],
+  "comments": [],
+  "data": [
+    { "key": ["1+2", "2000"], "values": ["90441", "93461", "58659", "34091"] },
+    { "key": ["1+2", "2001"], "values": ["91466", "93752", "60795", "32141"] },
+    { "key": ["1+2", "2002"], "values": ["95815", "95009", "64087", "33009"] },
+    { "key": ["1+2", "2003"], "values": ["99157", "92961", "63795", "35023"] },
+    { "key": ["1+2", "2004"], "values": ["100928", "90532", "62028", "36586"] },
+    { "key": ["1+2", "2005"], "values": ["101346", "91710", "65229", "38118"] },
+    { "key": ["1+2", "2006"], "values": ["105913", "91177", "95750", "44908"] },
+    { "key": ["1+2", "2007"], "values": ["107421", "91729", "99485", "45418"] },
+    {
+      "key": ["1+2", "2008"],
+      "values": ["109301", "91449", "101171", "45294"]
+    },
+    {
+      "key": ["1+2", "2009"],
+      "values": ["111801", "90080", "102280", "39240"]
+    },
+    { "key": ["1+2", "2010"], "values": ["115641", "90487", "98801", "48853"] },
+    { "key": ["1+2", "2011"], "values": ["111770", "89938", "96467", "51179"] },
+    {
+      "key": ["1+2", "2012"],
+      "values": ["113177", "91938", "103059", "51747"]
+    },
+    {
+      "key": ["1+2", "2013"],
+      "values": ["113593", "90402", "115845", "50715"]
+    },
+    {
+      "key": ["1+2", "2014"],
+      "values": ["114907", "88976", "126966", "51237"]
+    },
+    {
+      "key": ["1+2", "2015"],
+      "values": ["114870", "90907", "134240", "55830"]
+    },
+    {
+      "key": ["1+2", "2016"],
+      "values": ["117425", "90982", "163005", "45878"]
+    },
+    {
+      "key": ["1+2", "2017"],
+      "values": ["115416", "91972", "144489", "45620"]
+    },
+    {
+      "key": ["1+2", "2018"],
+      "values": ["115832", "92185", "132602", "46981"]
+    },
+    {
+      "key": ["1+2", "2019"],
+      "values": ["114523", "88766", "115805", "47718"]
+    },
+    { "key": ["1+2", "2020"], "values": ["113077", "98124", "82518", "48937"] }
+  ],
+  "metadata": [
+    {
+      "infofile": "BE0101",
+      "updated": "2021-02-22T08:30:00Z",
+      "label": "Folkmängd och befolkningsförändringar efter kön, år och tabellinnehåll",
+      "source": "SCB"
+    }
+  ]
+}

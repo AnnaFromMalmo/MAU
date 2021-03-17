@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+#button {
+    color: white;
+    background-color: lightslategray;
+    margin: 12px;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Johnny-Five</h1>
+        <a href="" id="button">Click me</a>
+        <script>
+            const data = {message: "Yo, man"};
+            const options = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            }
+
+            const response = await fetch("arduino", options);
+            const responseJSON = await response/json();
+            console.log(responseJSON);
+        </script>
+    </body>
+</html>

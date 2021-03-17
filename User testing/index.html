@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 15% auto auto 15%;
+        grid-template-rows: 15% auto auto;
+        column-gap: 50px;
+        row-gap: 50px;
+      }
+
+      #fast {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      #slow {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+
+      #thxFast {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+      }
+
+      #thxSlow {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+      }
+      button {
+        margin: 12px;
+        padding: 12px;
+        margin-left: 0;
+        font-size: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        font-size: 60px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin-bottom: 12px;
+      }
+
+      body {
+        margin: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <button id="fast">Fast movement</button>
+      <button id="slow">Slow movement</button>
+      <button id="thxFast">Thanks fast</button>
+      <button id="thxSlow">Thanks slow</button>
+    </div>
+    <script>
+      fast.addEventListener("click", function () {
+        fetch("/plantMove/fast")
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+      });
+      slow.addEventListener("click", function () {
+        fetch("/plantMove/slow")
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+      });
+      thxFast.addEventListener("click", function () {
+        fetch("/plantMove/thxFast")
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+      });
+      thxSlow.addEventListener("click", function () {
+        fetch("/plantMove/thxSlow")
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+      });
+    </script>
+  </body>
+</html>
