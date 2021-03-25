@@ -21,8 +21,8 @@ board.on("ready", () => {
 
   function thxFast() {
     servo.sweep({
-      range: [180, 155],
-      interval: 200,
+      range: [180, 160],
+      interval: 70,
     });
     setTimeout(function stop() {
       servo.stop();
@@ -34,7 +34,7 @@ board.on("ready", () => {
   function thxSlow() {
     servo.sweep({
       range: [180, 150],
-      interval: 600,
+      interval: 700,
     });
     setTimeout(function stop() {
       servo.stop();
@@ -46,13 +46,13 @@ board.on("ready", () => {
   function fast() {
     servo.sweep({
       range: [180, 166],
-      interval: 150,
+      interval: 75,
     });
     setTimeout(function stop() {
       servo.stop();
       servo.home(180);
       servoOn = false;
-    }, 5000);
+    }, 4000);
   }
   function slow() {
     servo.sweep({
@@ -63,7 +63,7 @@ board.on("ready", () => {
       servo.stop();
       servo.home(180);
       servoOn = false;
-    }, 8000);
+    }, 4000);
   }
 
   app.get("/plantMove/:type", (request, response) => {
